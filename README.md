@@ -1,3 +1,4 @@
-# buildspace 
-### Welcome 👋
-This is the starter template for the [build your own AI writing assistant w/ GPT-3](https://buildspace.so/builds/ai-writer) project.
+# LoLGPT
+### LoLGPT is a wrapper that uses GPT-3.5 turbo to provide answers about league of legends
+Access Here: https://lolgpt.netlify.app/
+
