@@ -48,7 +48,7 @@ const Results = () => {
   };
 
   const Page2 = () => (
-    <div className="container">
+    <div className="container vertical-center">
       {isGenerating ? (
         <div className="vertical-center">
           <span className="loader"></span>
@@ -60,7 +60,7 @@ const Results = () => {
               <div className="output">
                 <div className="output-header-container">
                   <div className="output-header">
-                    <h3>{question}</h3>
+                    <h2>{question}</h2>
                   </div>
                 </div>
                 <div className="output-content">
@@ -94,7 +94,6 @@ const Results = () => {
       <Head>
         <title>LoL GPT</title>
       </Head>
-      {isGenerating && <span className="loader"></span>}
       <Page2 />
     </div>
   );
