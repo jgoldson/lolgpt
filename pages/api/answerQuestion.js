@@ -7,7 +7,6 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const answerQuestion = async (req, res) => {
-  console.log("Received question: ", req.body.input);
   const message = [
     {
       role: "system",
