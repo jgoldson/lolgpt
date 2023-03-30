@@ -45,11 +45,11 @@ const Home = () => {
           <div className="header-title">
             <h1>Ask any question about League of Legends</h1>
           </div>
+          <br></br>
 
           <div className="form-group ml-auto mr-auto">
             <textarea
-              placeholder="Enter question here.
-                Example: Who is an easy jungler to learn?"
+              placeholder="Enter your question here! Ex. Who is an easy jungler to learn?"
               className="prompt-box"
               value={userInput}
               onChange={onUserChangedText}

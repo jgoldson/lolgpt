@@ -10,6 +10,9 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
+    background-image: url("../assets/Ashe_Freljord.jpg");
+    background-position: center center;
+    background-size: cover;
     background-color: rgb(255, 255, 255);
     flex-flow: column nowrap;
     gap: 10px;
@@ -41,7 +44,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    color: #383838
+    color: #ffffff
 }
 
 .header-title {
@@ -81,14 +84,14 @@ body {
 
 .prompt-box {
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgb(255, 255, 255);
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.205);
     border-radius: 16px;
     display: flex;
     flex: 0 0 auto;
@@ -109,10 +112,14 @@ body {
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: center;
-    color: rgba(71, 71, 71, 0.911);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-transform: none;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+  }
 
 textarea {
     font-family: 'Manrope', sans-serif;
@@ -316,11 +323,11 @@ textarea {
     font-family: "Manrope", serif;
     font-size: 40px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0px;
     line-height: 1.4em;
     text-align: start;
-    color: #303030;
+    color: #ffffff;
     text-decoration: none;
     text-transform: none;
     margin: 0;
@@ -340,8 +347,42 @@ textarea {
     font-size:large;
     text-align: left;
     white-space: pre-line;
-    color: rgba(48, 48, 48, 0.5);
+    color: rgb(255, 255, 255);
     margin: 0px 20px;
+}
+.output-box {
+    border-bottom-width: 1px;
+    border-color: rgb(255, 255, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    place-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.331);
+    border-radius: 16px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: auto;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    width: auto;
+    max-width: 1200px;
+    will-change: transform;
+    overflow: auto;
+    outline: black;
+    resize: none;
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: none;
 }
 
 .label-text {
@@ -419,8 +460,8 @@ textarea {
 
  /* Loading ring animation */
 .loader {
-    width: 18px;
-    height: 18px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     display: inline-block;
     border-top: 2px solid #0d0d0d;
