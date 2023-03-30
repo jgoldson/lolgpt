@@ -10,7 +10,7 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-image: url("../public/Ashe_Freljord.jpg");
+    background-image: url("/Ashe_Freljord.jpg");
     background-position: center center;
     background-size: cover;
     background-color: rgb(255, 255, 255);
